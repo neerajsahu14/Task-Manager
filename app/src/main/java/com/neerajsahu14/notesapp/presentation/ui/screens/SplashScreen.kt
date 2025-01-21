@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.res.painterResource
@@ -21,6 +22,7 @@ fun SplashScreen(navController: NavController) {
     Column(modifier = Modifier.fillMaxSize()
         .background(MaterialTheme.colorScheme.background),
         verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
         ) {
         Image(
             painter = painterResource(id = R.drawable.tm_logo),
